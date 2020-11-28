@@ -2,56 +2,164 @@
 <html lang="en">
 
 <head>
-  <!-- Required meta tags -->
+
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/animate.css">
+  <link rel="stylesheet" href="./css/morphext.css">
 
   <title>Hello, world!</title>
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-primary h-500">
+  <nav class="navbar d-none d-lg-flex navbar-expand-lg navbar-dark bg-primary h-500 fixed-top p-0">
     <div class="container">
       <a class="navbar-brand" href="#">
-        <img src="https://muellersolar.com.br/wp-content/uploads/2019/08/cropped-Mueller-Solar-2.png" width="80" height="80" alt="">
+        <img src="https://i.ibb.co/mBwhXRv/path2936.webp" height="50">
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item active">
+      <div>
+        <ul class="navbar-nav float-right">
+          <li class="nav-item">
             <a class="nav-link" href="#">INÍCIO</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">BENEFíCIOS</a>
+            <a class="nav-link" href="#advantages">VANTANGENS</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">SERVIÇOS</a>
+            <a class="nav-link" href="#services">SERVIÇOS</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">CONTATO</a>
+            <a class="nav-link" href="#contact">CONTATO</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-    crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-    crossorigin="anonymous"></script>
-</body>
+  <nav class="navbar d-lg-none navbar-light bg-light h-500 fixed-top p-0">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="./img/brand light.png" width="80" height="80">
+      </a>
+      <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav  bg-light container">
+          <li class="nav-item">
+            <a class="nav-link" href="#">INÍCIO</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#advantages">VANTANGENS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#services">SERVIÇOS</a>
+          </li>
+          <li class="nav-item">
+            <button class="nav-link" href="#contact">CONTATO</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
+  <section class="hero-section text-light align-items-center d-flex bg-dark">
+
+    <div class="container">
+      <span class="hero-text">
+        DESIGN
+      </span><br>
+      <span class="rotate text-danger hero-text">
+        CRIATIVO, RESPONSIVO, FUTURÍSTA, EXCLUSIVO, MINIMALISTA
+      </span>
+      <h5 class="my-4">COM A TECNOLOGIA USADA PELAS GRANDES EMPRESAS</h5>
+      <button type="menu" class="btn-lg btn-danger mr-1 mx-4">
+        <a href="#advantages">VANTANGENS</a>
+      </button>
+      <button id="bt" type="button" class="btn-lg btn-transparent border border-white mx-4 mt-4">NOSSOS CONTATOS</button>
+    </div>
+    </div>
+  </section>
+
+  <section class="bg-primary py-4" id="advantages">
+    <div class="container icons-and-text">
+      <div class="row icons-and-text">
+        <div class="col-lg-3 col-sm-6 text-center">
+          <div class="card">
+            <img class="mb-4 card-img-top" src="./img/responsive.svg" alt="Card image cap">
+            <div class="card-body p-0">
+              <h5 class="card-title"><b>RESPONSIVO</b></h5>
+      
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6 text-center">
+          <div class="card">
+            <img class="mb-4 card-img-top" src="./img/creative.svg" alt="Card image cap">
+            <div class="card-body p-0">
+              <h5 class="card-title"><b>EXCLUSIVO</b></h5>
+      
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6 text-center">
+          <div class="card">
+            <img class="mb-4 card-img-top" src="https://i.ibb.co/RP1dC0L/wheel-design-logo-white-p.png" alt="Card image cap">
+            <div class="card-body p-0">
+              <h5 class="card-title"><b>OCUPA POUCO ESPAÇO</b></h5>
+      
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6 text-center">
+          <div class="card">
+            <img class="mb-4 card-img-top" src="https://i.ibb.co/RP1dC0L/wheel-design-logo-white-p.png" alt="Card image cap">
+            <div class="card-body p-0">
+              <h5 class="card-title"><b>ENERGIA RENOVÁVEL</b></h5>
+      
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+    
+  <script src="./js/jquery.min.js"></script>
+  <script src="./js/popper.min.js"></script>
+  <script src="./js/bootstrap.min.js"></script>
+  <script src="./js/morphext.js"></script>
+  <script src="./js/smooth-scroll.polyfills.min.js"></script>
+  <script>
+    $(".rotate").Morphext(
+      defaults = {
+        animation: "animate__flipInX",
+        separator: ",",
+        speed: 2000,
+      }
+    );
+    $('#bt')
+      .mouseover(function(){
+
+        $('#bt').addClass('animate__animated animate__fadeIn');  
+      })
+      .mouseout(function(){
+        $('#bt').removeClass('animate__animated animate__fadeIn');  
+      });
+
+  </script>
+  <script>
+    var scroll = new SmoothScroll('a[href*="#"]', {
+	speed: 1000,
+	speedAsDuration: true
+});
+  </script>
+</body>
+ 
 </html>
