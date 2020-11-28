@@ -9,13 +9,13 @@ sass.compiler = require("node-sass"); //Necessário para funcionar gulp-sass
 
 function compilaSass() {
   return gulp
-    .src("src/scss/**/*.scss")
+    .src("docs/scss/**/*.scss")
     .pipe(sass({ outputStyle: "compressed" }).on("error", sass.logError)) // Converte Sass para CSS mimificado com gulp-sass
-    .pipe(gulp.dest("src/css"));
+    .pipe(gulp.dest("docs/css"));
 }
 
 function watch() {
-  gulp.watch("src/scss/**/*.scss", compilaSass);
+  gulp.watch("docs/scss/**/*.scss", compilaSass);
 }
 
 gulp.task('default', watch, compilaSass);
